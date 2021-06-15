@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlDePagos.ControladorControlDePagos">
+   <children>
+      <ImageView fitHeight="611.0" fitWidth="919.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fondo_control_de_pagos.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitulo" alignment="CENTER" layoutX="1.0" layoutY="21.0" prefHeight="21.0" prefWidth="876.0" text="CONTROL DE PAGOS" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewDatos" layoutX="32.0" layoutY="208.0" prefHeight="333.0" prefWidth="810.0" stylesheets="@estilos.css">
+        <columns>
+          <TableColumn fx:id="columnCuota" prefWidth="75.0" text="No. de cuota" />
+          <TableColumn fx:id="columnValor" prefWidth="75.0" text="Valor" />
+            <TableColumn fx:id="columnFecha" prefWidth="75.0" text="Fecha de pago" />
+            <TableColumn fx:id="columnInteres" prefWidth="75.0" text="Interés" />
+            <TableColumn fx:id="columnPendiente" prefWidth="75.0" text="Pendiente" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="114.0" layoutX="31.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="812.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.38834951456310685" startX="0.2815533980582524" startY="0.3689320388349515">
+               <stops>
+                  <Stop color="#212aff" />
+                  <Stop color="#ff0dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="labelNombre" layoutX="56.0" layoutY="92.0" prefHeight="27.0" prefWidth="375.0" text="Nombre: xxx" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelApellidos" layoutX="56.0" layoutY="127.0" prefHeight="27.0" prefWidth="375.0" text="Apellidos: xxx" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelValorTotal" layoutX="456.0" layoutY="92.0" prefHeight="27.0" prefWidth="369.0" text="Valor de la propiedad: xxx" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTotalPagado" layoutX="456.0" layoutY="127.0" prefHeight="27.0" prefWidth="369.0" text="Total pagado:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUltimoPago" layoutX="56.0" layoutY="162.0" prefHeight="27.0" prefWidth="375.0" text="Último pago realizado:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMeseMora" layoutX="456.0" layoutY="162.0" prefHeight="27.0" prefWidth="369.0" text="Meses de mora: xx" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="39.0" layoutX="33.0" layoutY="551.0" stroke="BLACK" strokeType="INSIDE" width="239.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.38834951456310685" startX="0.2815533980582524" startY="0.3689320388349515">
+               <stops>
+                  <Stop color="#212aff" />
+                  <Stop color="#ff0dd7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="botonSalir" fitHeight="39.0" fitWidth="50.0" layoutX="16.0" layoutY="12.0" onMouseClicked="#clickSalir" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="labelTotalCuotasAPagar" layoutX="40.0" layoutY="557.0" prefHeight="27.0" prefWidth="255.0" text="Total de cuotas a pagar: xxx " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangleAbonar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="710.0" layoutY="548.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="labelAbonar" alignment="CENTER" layoutX="706.0" layoutY="548.0" onMouseClicked="#clickAbonar" onMouseEntered="#hoverAbonar" onMouseExited="#noHoverAbonar" prefHeight="48.0" prefWidth="132.0" text="ABONAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

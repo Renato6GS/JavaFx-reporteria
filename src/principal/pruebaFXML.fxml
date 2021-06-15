@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox fx:id="miVBox" maxWidth="876.0" prefHeight="600.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.Controller">
+  <children>
+    <AnchorPane fx:id="miAnchorPane" maxHeight="-1.0" maxWidth="876.0" prefHeight="637.0" prefWidth="876.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fx:id="fondoImagen" fitHeight="664.0" fitWidth="876.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fondoEditado.png" />
+               </image>
+            </ImageView>
+        <Label fx:id="labelF" alignment="CENTER" layoutX="406.0" layoutY="17.0" prefHeight="64.0" prefWidth="24.0" style="&#10;" text="F" textAlignment="CENTER" textFill="#f800f8" wrapText="false">
+          <font>
+            <Font name="Times New Roman" size="57.0" />
+          </font>
+        </Label>
+            <Label fx:id="labelNum1" alignment="CENTER" layoutX="438.0" layoutY="17.0" prefHeight="64.0" prefWidth="24.0" style="&#10;" text="1" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+               <font>
+                  <Font name="Times New Roman" size="57.0" />
+               </font>
+            </Label>
+            <TextFlow fx:id="textRegistroClientes" layoutX="45.0" layoutY="160.0" onMouseClicked="#registrarCliente" onMouseEntered="#hoverRegistroCliente" onMouseExited="#noHoverRegistroCliente" prefHeight="72.0" prefWidth="361.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="362.0" text="Registro y actualización " textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="361.0" text="de datos de clientes" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextFlow>
+            <Line fx:id="lineaHorizontalInferior" endX="100.0" layoutX="304.0" layoutY="241.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior" endX="62.0" layoutX="362.0" layoutY="222.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior2" endX="100.0" layoutX="314.0" layoutY="251.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior2" endX="62.0" layoutX="372.0" layoutY="232.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior" endX="100.0" layoutX="22.0" layoutY="158.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior2" endX="62.0" layoutX="2.0" layoutY="177.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior2" endX="100.0" layoutX="11.0" layoutY="147.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior" endX="62.0" layoutX="-9.0" layoutY="166.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <TextFlow fx:id="textRegistroPropiedad" layoutX="482.0" layoutY="160.0" onMouseClicked="#registrarPropiedad" onMouseEntered="#hoverRegistroPropiedad" onMouseExited="#noHoverRegistroPropiedad" prefHeight="72.0" prefWidth="361.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="362.0" text="Registro y actualización " textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="361.0" text="de datos de propiedades" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextFlow>
+            <TextFlow fx:id="textTraslado" layoutX="45.0" layoutY="449.0" onMouseClicked="#clickTrasladoPropiedad" onMouseEntered="#hoverTraslado" onMouseExited="#noHoverTraslado" prefHeight="72.0" prefWidth="361.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="362.0" text="Traslado de" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="361.0" text="propieades" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextFlow>
+            <TextFlow fx:id="textReportes" layoutX="482.0" layoutY="449.0" onMouseClicked="#clickReportes" onMouseEntered="#hoverReportes" onMouseExited="#noHoverReportes" prefHeight="72.0" prefWidth="361.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="362.0" text="Control de" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="361.0" text="pagos" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TextFlow>
+            <Line fx:id="lineaTituloIzquierdo" endX="-1.0" layoutX="435.0" layoutY="81.0" startX="-36.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaTituloDerecho" endX="-1.0" layoutX="473.0" layoutY="81.0" startX="-36.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Label fx:id="labelSubTitIzquierdo" layoutX="315.0" layoutY="76.0" prefHeight="47.0" prefWidth="123.0" text="BIENES INMU" textFill="#f800f8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Line fx:id="lineaHorizontalInferior1" endX="100.0" layoutX="304.0" layoutY="527.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior1" endX="62.0" layoutX="362.0" layoutY="508.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior21" endX="100.0" layoutX="314.0" layoutY="537.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior21" endX="62.0" layoutX="372.0" layoutY="518.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior1" endX="100.0" layoutX="22.0" layoutY="444.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior21" endX="62.0" layoutX="2.0" layoutY="463.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior21" endX="100.0" layoutX="11.0" layoutY="433.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior1" endX="62.0" layoutX="-9.0" layoutY="452.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior3" endX="100.0" layoutX="741.0" layoutY="241.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior3" endX="62.0" layoutX="799.0" layoutY="222.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior22" endX="100.0" layoutX="751.0" layoutY="251.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior22" endX="62.0" layoutX="809.0" layoutY="232.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior3" endX="100.0" layoutX="459.0" layoutY="158.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior22" endX="62.0" layoutX="439.0" layoutY="177.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior22" endX="100.0" layoutX="448.0" layoutY="147.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior3" endX="62.0" layoutX="428.0" layoutY="166.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior4" endX="100.0" layoutX="741.0" layoutY="527.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior4" endX="62.0" layoutX="799.0" layoutY="508.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalInferior23" endX="100.0" layoutX="751.0" layoutY="537.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalInferior23" endX="62.0" layoutX="809.0" layoutY="518.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior4" endX="100.0" layoutX="459.0" layoutY="444.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior23" endX="62.0" layoutX="439.0" layoutY="463.0" rotate="90.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaHorizontalSuperior23" endX="100.0" layoutX="448.0" layoutY="433.0" startX="25.0" stroke="#f800f8" strokeWidth="3.0" />
+            <Line fx:id="lineaVerticalSuperior4" endX="62.0" layoutX="428.0" layoutY="452.0" rotate="90.0" startX="25.0" stroke="WHITE" strokeWidth="3.0" />
+            <Rectangle fx:id="rectangleSalir" arcHeight="30.0" arcWidth="30.0" fill="#f800f800" height="35.0" layoutX="10.0" layoutY="564.0" stroke="#f800f8" strokeType="INSIDE" width="123.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Rectangle>
+            <Label fx:id="labelSalir" alignment="CENTER" layoutX="12.0" layoutY="564.0" onMouseClicked="#clickSalir" onMouseEntered="#hoverRectangleSalir" onMouseExited="#noHoverRectangleSalir" prefHeight="35.0" prefWidth="123.0" text="SALIR" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Rectangle fx:id="rectangleHecho" arcHeight="30.0" arcWidth="30.0" fill="#f700f700" height="35.0" layoutX="730.0" layoutY="562.0" stroke="#f700f7" strokeType="INSIDE" width="133.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Rectangle>
+            <Label fx:id="labelHecho" alignment="CENTER" layoutX="732.0" layoutY="562.0" onMouseClicked="#clickHechoPor" onMouseEntered="#hoverRectangleHecho" onMouseExited="#noHoverRectangleHecho" prefHeight="35.0" prefWidth="133.0" text="HECHO POR" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="labelSubTitDerecho" layoutX="436.0" layoutY="76.0" prefHeight="47.0" prefWidth="123.0" text="EBLES F1 LM" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="rectangleSideReportes" arcHeight="30.0" arcWidth="30.0" fill="#f700f700" height="35.0" layoutX="10.0" layoutY="12.0" stroke="#f700f7" strokeType="INSIDE" width="133.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Rectangle>
+            <Label fx:id="labelSideReportes" alignment="CENTER" layoutX="12.0" layoutY="12.0" onMouseClicked="#clickSideReportes" onMouseEntered="#hoverRectangleSideReportes" onMouseExited="#noHoverRectangleSideReportes" prefHeight="35.0" prefWidth="133.0" text="REPORTES" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <AnchorPane fx:id="sideBarReportes" layoutX="-1.0" layoutY="-1.0" prefHeight="610.0" prefWidth="876.0" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="610.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startY="0.18446601941747573">
+                           <stops>
+                              <Stop color="#e82188" />
+                              <Stop color="#090930" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteGeneralClientes" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="111.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteClientePorDpi" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="172.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteGeneralPropiedad" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="234.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReportePropiedadPorCodigo" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="296.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReportePropiedadPorDpi" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="358.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteDePagosPorCodigo" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="418.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteDePagosPendientes" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="480.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangleReporteDeClientesMorosos" arcWidth="30.0" fill="#ffffff00" height="47.0" layoutX="22.0" layoutY="542.0" stroke="#f500f500" strokeType="INSIDE" width="355.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Label fx:id="labelTitulo" alignment="CENTER" layoutX="1.0" layoutY="43.0" prefHeight="39.0" prefWidth="400.0" text="REPORTES" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="32.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="lineFinal" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="83.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal1" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="111.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal11" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="158.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal12" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="173.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReporteDpiCliente" alignment="CENTER" layoutX="11.0" layoutY="176.0" onMouseClicked="#clickReporteDpiCliente" onMouseEntered="#hoverReporteClientesPorDpi" onMouseExited="#noHoverReporteClientesPorDpi" prefHeight="39.0" prefWidth="389.0" text="Por DPI de cliente" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal111" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="220.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal13" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="235.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReporteGeneralPropiedades" alignment="CENTER" layoutX="5.0" layoutY="238.0" onMouseClicked="#clickReporteGeneralPropiedades" onMouseEntered="#hoverReporteGeneralPropiedades" onMouseExited="#noHoverReporteGeneralPropiedades" prefHeight="39.0" prefWidth="389.0" text="General de propiedades" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal112" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="282.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal14" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="297.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReportePropiedadPorCodigo" alignment="CENTER" layoutX="5.0" layoutY="300.0" onMouseClicked="#clickReportePropiedadPorCodigo" onMouseEntered="#hoverReportePropiedadPorCodigo" onMouseExited="#noHoverReportePropiedadPorCodigo" prefHeight="39.0" prefWidth="389.0" text="Propiedad por código de propiedad" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal113" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="344.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal15" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="359.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReportePropiedadPorDpi" alignment="CENTER" layoutX="1.0" layoutY="362.0" onMouseClicked="#clickReportePropiedadPorDpi" onMouseEntered="#hoverReportePropiedadPorDpi" onMouseExited="#noHoverReportePropiedadPorDpi" prefHeight="39.0" prefWidth="400.0" text="De propiedad por DPI" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal114" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="406.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal16" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="419.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReporteDePagosPorCodigoPropiedad" alignment="CENTER" layoutX="11.0" layoutY="422.0" onMouseClicked="#clickReporteDePagosPorCodigoPropiedad" onMouseEntered="#hoverReportePagosPorCodigo" onMouseExited="#noHoverReportePagosPorCodigo" prefHeight="39.0" prefWidth="389.0" text="De pagos por código de propiedad" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal115" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="466.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal17" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="481.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelReporteDePagosPendientes" alignment="CENTER" layoutX="5.0" layoutY="484.0" onMouseClicked="#clickReporteDePagosPendientes" onMouseEntered="#hoverReportePagosPendientes" onMouseExited="#noHoverReportePagosPendientes" prefHeight="39.0" prefWidth="389.0" text="De pagos pendientes" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal116" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="528.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Line fx:id="lineFinal18" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="543.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Label fx:id="labelClientesMorosos" alignment="CENTER" layoutX="1.0" layoutY="546.0" onMouseClicked="#clickReporteClientesMorosos" onMouseEntered="#hoverReporteClientesMorosos" onMouseExited="#noHoverReporteClientesMorosos" onMousePressed="#clickReporteClientesMorosos" prefHeight="39.0" prefWidth="389.0" text="De clientes morosos" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Line fx:id="lineFinal117" endX="253.0" fill="#ffffff36" layoutX="123.0" layoutY="590.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                  <Rectangle fx:id="rectangleSideFuera" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="609.0" layoutX="395.0" onMouseClicked="#clickSideRectangleFuera" stroke="TRANSPARENT" strokeType="INSIDE" width="479.0" />
+                  <Label fx:id="labelReporteGeneralClientes" alignment="CENTER" layoutY="114.0" onMouseClicked="#clickReporteGeneralClientes" onMouseEntered="#hoverReporteGeneralClientes" onMouseExited="#noHoverReporteGeneralClientes" prefHeight="39.0" prefWidth="400.0" text="General de clientes" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

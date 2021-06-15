@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="postgresql-42.2.16.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/barcode4j-2.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/com-jaspersoft-ireport.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/com-jaspersoft-ireport-components.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/com-jaspersoft-ireport-jasperserver.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/com-jaspersoft-jrx.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/commons-javaflow-20060411.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/iText-2.1.7.js2.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/jasper-compiler-jdt.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/jasperreports-5.5.0.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/jcommon-1.0.15.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/jfreechart-1.0.12.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/png-encoder-1.5.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/poi-3.6.jar"/>
+	<classpathentry kind="lib" path="LIBRERIAS IREPORT/postgresql-42.2.16.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

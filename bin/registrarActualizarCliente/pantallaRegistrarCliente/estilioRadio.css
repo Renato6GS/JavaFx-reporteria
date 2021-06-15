@@ -1,0 +1,9 @@
+.radio {
+        -fx-display: none; }
+       .radio:checked{
+          -fx-display: none; }
+        .radio {
+          -fx-padding: 5px 15px;
+          -fx-background: #303F9F;
+          -fx-border-radius: 2px;
+          -fx-color: #F2F2F2; }

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registrarActualizarPropiedad.pantallaRegistroActualizacionPropiedad.ControladorPantallaRegistroActualizacionPropiedad">
+   <children>
+      <ImageView fitHeight="611.0" fitWidth="919.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fondoPropiedad.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitulo" alignment="CENTER" layoutY="51.0" prefHeight="21.0" prefWidth="876.0" text="REGISTRO DE PROPIEDADES" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCodigoPropiedad" layoutX="57.0" layoutY="115.0" onKeyPressed="#enterCodigoPropiedad" onKeyTyped="#textTypedCodigoPropiedad" onMousePressed="#pressTextCodigoPropiedad" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineCodigoPropiedad" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="163.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelCodigoPropiedad" layoutX="57.0" layoutY="111.0" onMousePressed="#pressLabelCodigoPropiedad" prefHeight="54.0" prefWidth="355.0" text="  CÓDIGO DE PROPIEDAD" textFill="WHITE" />
+      <TextField fx:id="textNoDeFolio" layoutX="57.0" layoutY="190.0" onKeyPressed="#enterNoDeFolio" onKeyTyped="#textTypedNoDeFolio" onMousePressed="#pressTextNoDeFolio" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNoDeFolio" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="238.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNoDeFolio" layoutX="57.0" layoutY="186.0" onMousePressed="#pressLabelNoDeFolio" prefHeight="54.0" prefWidth="355.0" text="  NO. DE FOLIO" textFill="WHITE" />
+      <TextField fx:id="textArea" layoutX="57.0" layoutY="265.0" onKeyPressed="#enterArea" onKeyTyped="#textTypedArea" onMousePressed="#pressTextArea" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineArea" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="313.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelArea" layoutX="57.0" layoutY="261.0" onMousePressed="#pressLabelArea" prefHeight="54.0" prefWidth="355.0" text="  ÁREA" textFill="WHITE" />
+      <TextField fx:id="textNoDeEscritura" layoutX="57.0" layoutY="340.0" onKeyPressed="#enterNoDeEscritura" onKeyTyped="#textTypedNoDeEscritura" onMousePressed="#pressTextNoDeEscritura" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNoDeEscritura" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="388.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNoDeEscritura" layoutX="57.0" layoutY="336.0" onMousePressed="#pressLabelNoDeEscritura" prefHeight="54.0" prefWidth="355.0" text="  NO. DE ESCRITURA" textFill="WHITE" />
+      <TextField fx:id="textValorPropiedad" layoutX="57.0" layoutY="415.0" onKeyPressed="#enterValorPropiedad" onKeyTyped="#textTypedValorPropiedad" onMousePressed="#pressTextValorPropiedad" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineValorPropiedad" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="463.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelValorPropiedad" layoutX="57.0" layoutY="411.0" onMousePressed="#pressLabelValorPropiedad" prefHeight="54.0" prefWidth="355.0" text="  VALOR Q." textFill="WHITE" />
+      <TextField fx:id="textInteres" layoutX="57.0" layoutY="490.0" onKeyPressed="#enterInteres" onKeyTyped="#textTypedInters" onMousePressed="#pressTextInteres" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineInteres" endX="253.0" fill="#ffffff36" layoutX="158.0" layoutY="538.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelIntres" layoutX="57.0" layoutY="486.0" onMousePressed="#pressLabelInteres" prefHeight="54.0" prefWidth="355.0" text="  PORCENTAJE DE INTERÉS" textFill="WHITE" />
+      <TextField fx:id="textNoDeFinca" layoutX="479.0" layoutY="115.0" onKeyPressed="#enterNoDeFinca" onKeyTyped="#textTypedNoDeFinca" onMousePressed="#pressTextNoDeFinca" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNoDeFinca" endX="253.0" fill="#ffffff36" layoutX="580.0" layoutY="163.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNoDeFinca" layoutX="479.0" layoutY="111.0" onMousePressed="#pressLabelNoDeFinca" prefHeight="54.0" prefWidth="355.0" text="  NO. DE FINCA" textFill="WHITE" />
+      <TextField fx:id="textNoDeLibro" layoutX="479.0" layoutY="190.0" onKeyPressed="#enterNoDeLibro" onKeyTyped="#textTypedNoDeLibro" onMousePressed="#pressTextNoDeLibro" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNoDeLibro" endX="253.0" fill="#ffffff36" layoutX="580.0" layoutY="238.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNoDeLibro" layoutX="479.0" layoutY="186.0" onMousePressed="#pressLabelNoDeLibro" prefHeight="54.0" prefWidth="355.0" text="  NO. DE LIBRO" textFill="WHITE" />
+      <TextField fx:id="textNoDeCatastro" layoutX="479.0" layoutY="265.0" onKeyPressed="#enterNoDeCatastro" onKeyTyped="#textTypedNoDeCatastro" onMousePressed="#pressTextNoDeCatastro" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNoDeCatastro" endX="253.0" fill="#ffffff36" layoutX="580.0" layoutY="313.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNoDeCatastro" layoutX="479.0" layoutY="261.0" onMousePressed="#pressLabelNoDeCatastro" prefHeight="54.0" prefWidth="355.0" text="  NO. DE CATASTRO" textFill="WHITE" />
+      <TextField fx:id="textCuotas" layoutX="479.0" layoutY="415.0" onKeyPressed="#enterCuotas" onKeyTyped="#textTypedCuotas" onMousePressed="#pressTextCuotas" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineCuotas" endX="253.0" fill="#ffffff36" layoutX="580.0" layoutY="463.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelCuotas" layoutX="479.0" layoutY="411.0" onMousePressed="#pressLabelCuotas" prefHeight="54.0" prefWidth="355.0" text="  CANTIDAD DE CUOTAS" textFill="WHITE" />
+      <TextField fx:id="textDpi" layoutX="479.0" layoutY="490.0" onKeyPressed="#enterDpi" onKeyTyped="#textTypedDpi" onMousePressed="#pressTextDpi" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineDpi" endX="253.0" fill="#ffffff36" layoutX="580.0" layoutY="538.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelDpi" layoutX="479.0" layoutY="486.0" onMousePressed="#pressLabelDpi" prefHeight="54.0" prefWidth="355.0" text="  DPI DEL CLIENTE" textFill="WHITE" />
+      <ComboBox fx:id="comboDia" editable="true" layoutX="479.0" layoutY="358.0" onMouseEntered="#hoverDia" onMouseExited="#noHoverDia" prefHeight="31.0" prefWidth="97.0" promptText="Día" style="-fx-background-color: transparent;" styleClass="text" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css" />
+      <ComboBox fx:id="comboMes" editable="true" layoutX="607.0" layoutY="358.0" onMouseEntered="#hoverMes" onMouseExited="#noHoverMes" prefHeight="31.0" prefWidth="97.0" promptText="Mes" style="-fx-background-color: transparent;" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css" />
+      <ComboBox fx:id="comboAnio" editable="true" layoutX="734.0" layoutY="358.0" onMouseEntered="#hoverAnio" onMouseExited="#noHoverAnio" prefHeight="31.0" prefWidth="97.0" promptText="Año" style="-fx-background-color: transparent;" stylesheets="@../../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css" />
+      <Label fx:id="labelFechaEscritura" layoutX="479.0" layoutY="328.0" onMousePressed="#pressLabelFechaEscritura" prefHeight="31.0" prefWidth="355.0" text="  FECHA DE ESCRITURA" textFill="WHITE" />
+      <Line fx:id="lineDia" endX="-5.0" endY="1.0" fill="#ffffff36" layoutX="580.0" layoutY="388.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line fx:id="lineMes" endX="-5.0" fill="#ffffff36" layoutX="708.0" layoutY="388.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line fx:id="lineAnio" endX="-5.0" fill="#ffffff36" layoutX="835.0" layoutY="388.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Rectangle fx:id="rectangleLimpiar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="58.0" layoutY="544.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="btnLimpiar" alignment="CENTER" layoutX="54.0" layoutY="544.0" onMouseClicked="#clickLimpiar" onMouseEntered="#hoverLimpiar" onMouseExited="#noHoverLimpiar" prefHeight="48.0" prefWidth="132.0" text="LIMPIAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Rectangle fx:id="rectangleGuardar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="711.0" layoutY="544.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="btnGuardar" alignment="CENTER" layoutX="707.0" layoutY="544.0" onMouseClicked="#clickGuardar" onMouseEntered="#hoverGuardar" onMouseExited="#noHoverGuardar" prefHeight="48.0" prefWidth="132.0" text="GUARDAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line fx:id="lineInfRegresar" endX="433.89727783203125" layoutX="254.0" layoutY="609.0" startX="-58.10270690917969" stroke="WHITE" strokeWidth="5.0" />
+      <Label fx:id="labelRegresar" alignment="TOP_CENTER" layoutX="198.0" layoutY="579.0" onMouseClicked="#clickRegresar" onMouseEntered="#hoverRegresar" onMouseExited="#noHoverRegresar" prefHeight="52.0" prefWidth="496.0" text="REGRESAR" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

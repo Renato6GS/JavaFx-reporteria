@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPaneTraslado" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trasladoPropiedad.ControladorTrasladoPropiedad">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="919.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dust-particles-on-purple-background-in-4k.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textDpiEmisor" layoutX="48.0" layoutY="91.0" onKeyPressed="#enterDpiEmisor" onKeyTyped="#textTypedDpiEmisor" onMousePressed="#pressTextDpiEmisor" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineDpiEmisor" endX="253.0" fill="#ffffff36" layoutX="149.0" layoutY="139.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelDpiEmisor" layoutX="48.0" layoutY="87.0" onMousePressed="#pressLabelDpiEmisor" prefHeight="54.0" prefWidth="355.0" text="  DPI DEL CLIENTE EMISOR" textFill="WHITE" />
+      <Label fx:id="labelTitulo" alignment="CENTER" layoutY="24.0" prefHeight="21.0" prefWidth="876.0" text="TRASLADO DE PROPIEDADES" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCodigoPropiedad" layoutX="48.0" layoutY="169.0" onKeyPressed="#enterCodigoPropiedad" onKeyTyped="#textTypedCodigoPropiedad" onMousePressed="#pressTextCodigoPropiedad" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineCodigoPropiedad" endX="253.0" fill="#ffffff36" layoutX="149.0" layoutY="217.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelCodigoPropiedad" layoutX="48.0" layoutY="165.0" onMousePressed="#pressLabelCodigoPropiedad" prefHeight="54.0" prefWidth="355.0" text="  CÓDIGO DE PROPIEDAD" textFill="WHITE" />
+      <TextField fx:id="textDpiReceptor" layoutX="472.0" layoutY="91.0" onKeyPressed="#enterDpiReceptor" onKeyTyped="#textTypedDpiReceptor" onMousePressed="#pressTextDpiReceptor" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@../registrarActualizarCliente/pantallaRegistrarCliente/estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineDpiReceptor" endX="253.0" fill="#ffffff36" layoutX="573.0" layoutY="139.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelDpiReceptor" layoutX="472.0" layoutY="87.0" onMousePressed="#pressLabelDpiReceptor" prefHeight="54.0" prefWidth="355.0" text="  DPI DEL CLIENTE RECEPTOR" textFill="WHITE" />
+      <Line fx:id="lineCodigoPropiedad12" endX="25.43603515625" fill="#ffffff36" layoutX="476.0" layoutY="169.0" rotate="90.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Rectangle fx:id="rectangleBuscar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="375.0" layoutY="242.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="labelBuscar" alignment="CENTER" layoutX="371.0" layoutY="242.0" onMouseClicked="#clickBuscar" onMouseEntered="#hoverBuscar" onMouseExited="#noHoverBuscar" prefHeight="48.0" prefWidth="132.0" text="BUSCAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="labelDatosPropiedad" alignment="CENTER" layoutX="261.0" layoutY="298.0" prefHeight="54.0" prefWidth="355.0" text="DATOS DE LA PROPIEDAD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="394.0" prefHeight="54.0" prefWidth="171.0" text="Valor de la propiedad:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="351.0" prefHeight="54.0" prefWidth="170.0" text="Propietario:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="437.0" prefHeight="54.0" prefWidth="174.0" text="Interés: " textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="480.0" prefHeight="54.0" prefWidth="176.0" text="Total de  cuotas:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line fx:id="lineDatosDeLaPropiedad" endX="253.0" fill="#ffffff36" layoutX="362.0" layoutY="344.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line fx:id="lineFinal" endX="253.0" fill="#ffffff36" layoutX="362.0" layoutY="536.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Rectangle fx:id="rectangleTrasladar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="364.0" layoutY="551.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="148.0" />
+      <Label fx:id="labelTrasladar" alignment="CENTER" layoutX="365.0" layoutY="551.0" onMouseClicked="#clickTrasladar" onMouseEntered="#hoverTrasladar" onMouseExited="#noHoverTrasladar" prefHeight="48.0" prefWidth="145.0" text="TRASLADAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="labelHistorial" alignment="CENTER" layoutX="557.0" layoutY="167.0" onMouseClicked="#clickHistorial" onMouseEntered="#hoverHistorial" onMouseExited="#noHoverHistorial" prefHeight="48.0" prefWidth="199.0" text="HISTORIAL DE TRASLADOS" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="467.0" layoutY="437.0" prefHeight="54.0" prefWidth="132.0" text="Moras:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="394.0" prefHeight="54.0" prefWidth="139.0" text="Total pagado:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="480.0" prefHeight="54.0" prefWidth="132.0" text="Cuotas pagadas:" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPropietario" layoutX="238.0" layoutY="351.0" prefHeight="54.0" prefWidth="591.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelValor" layoutX="238.0" layoutY="394.0" prefHeight="54.0" prefWidth="210.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelInteres" layoutX="238.0" layoutY="437.0" prefHeight="54.0" prefWidth="217.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTotalCuotas" layoutX="238.0" layoutY="480.0" prefHeight="54.0" prefWidth="214.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTotalPagado" layoutX="608.0" layoutY="394.0" prefHeight="54.0" prefWidth="242.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMoras" layoutX="608.0" layoutY="437.0" prefHeight="54.0" prefWidth="254.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCuotasPagadas" layoutX="608.0" layoutY="480.0" prefHeight="54.0" prefWidth="254.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="botonSalir" fitHeight="39.0" fitWidth="50.0" layoutX="806.0" layoutY="24.0" onMouseClicked="#clickRegresar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../controlDePagos/logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

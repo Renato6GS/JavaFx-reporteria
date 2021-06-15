@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hechoPorPantalla.ControladorHechoPor">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="958.0" layoutX="-43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@originalFondoHechoPor.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#690645ae" height="567.0" layoutX="26.0" layoutY="21.0" stroke="WHITE" strokeType="INSIDE" width="825.0" />
+      <Label alignment="CENTER" layoutY="39.0" prefHeight="38.0" prefWidth="877.0" text="UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="74.0" prefHeight="38.0" prefWidth="877.0" text="ZACAPA" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="235.0" prefHeight="38.0" prefWidth="877.0" text="Ing. Kevyn Alexander Aguilar Ramírez" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="283.0" prefHeight="38.0" prefWidth="877.0" text="Programación II" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="316.0" prefHeight="38.0" prefWidth="877.0" text="Ciclo IV" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="142.0" prefHeight="38.0" prefWidth="877.0" text="Facultad de Ingeniería en Sistemas de Información" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="174.0" prefHeight="38.0" prefWidth="877.0" text="y Ciencias de la computación" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="455.0" prefHeight="38.0" prefWidth="877.0" text="Estudiante: Luis Renato Granados Ogáldez" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="499.0" prefHeight="38.0" prefWidth="877.0" text="1190-19-4642" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="374.0" prefHeight="38.0" prefWidth="877.0" text="PROYECTO FINAL" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="539.0" prefHeight="38.0" prefWidth="877.0" text="31 de octubre del 2,020" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangleOk" arcHeight="30.0" arcWidth="30.0" fill="#f800f800" height="35.0" layoutX="713.0" layoutY="540.0" stroke="#f800f8" strokeType="INSIDE" width="123.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Rectangle>
+      <Label fx:id="labelOk" alignment="CENTER" layoutX="714.0" layoutY="541.0" onMouseClicked="#clickOk" onMouseEntered="#hoverOk" onMouseExited="#noHoverOk" prefHeight="35.0" prefWidth="123.0" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" maxHeight="-Infinity" prefHeight="610.0" prefWidth="876.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registrarActualizarCliente.pantallaRegistrarCliente.RegistrarClienteControlador">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="883.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fondoSubMenu.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textNombre" layoutX="73.0" layoutY="118.0" onKeyPressed="#enterNombre" onKeyTyped="#textTypedNombre" onMousePressed="#pressTextNombre" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNombre" endX="253.0" fill="#ffffff36" layoutX="174.0" layoutY="166.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNombre" layoutX="73.0" layoutY="114.0" onMousePressed="#pressLabelNombre" prefHeight="54.0" prefWidth="355.0" text="  NOMBRE" textFill="WHITE" />
+      <Label fx:id="labelRegresar" alignment="BOTTOM_CENTER" layoutY="563.0" prefHeight="36.0" prefWidth="875.0" text="REGRESAR" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line fx:id="lineInfRegresar" endX="488.0" layoutX="244.0" layoutY="606.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Label fx:id="labelRegresarFijo" alignment="BOTTOM_CENTER" layoutY="568.0" onMouseClicked="#clickRegresar" onMouseEntered="#hoverRegresar" onMouseExited="#noHoverRegresar" prefHeight="41.0" prefWidth="875.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="textApellidos" layoutX="73.0" layoutY="194.0" onKeyPressed="#enterApellidos" onKeyTyped="#textTypedApellidos" onMousePressed="#pressTextApellidos" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineApellidos" endX="256.0" fill="#ffffff36" layoutX="174.0" layoutY="242.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelApellidos" layoutX="73.0" layoutY="194.0" onMousePressed="#pressLabelApellidos" prefHeight="48.0" prefWidth="355.0" text="  APELLIDOS" textFill="WHITE" />
+      <TextField fx:id="textDPI" layoutX="468.0" layoutY="118.0" onKeyPressed="#enterDPI" onKeyTyped="#textTypedDPI" onMousePressed="#pressTextDPI" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineDPI" endX="256.0" fill="#ffffff36" layoutX="569.0" layoutY="166.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelDPI" layoutX="468.0" layoutY="118.0" onMousePressed="#pressLabelDPI" prefHeight="48.0" prefWidth="355.0" text="  DPI" textFill="WHITE" />
+      <TextField fx:id="textNit" layoutX="468.0" layoutY="194.0" onKeyPressed="#enterNit" onKeyTyped="#textTypedNit" onMousePressed="#pressTextNit" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineNit" endX="256.0" fill="#ffffff36" layoutX="569.0" layoutY="242.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelNit" layoutX="468.0" layoutY="194.0" onMousePressed="#pressLabelNit" prefHeight="48.0" prefWidth="355.0" text="   NIT" textFill="WHITE" />
+      <ComboBox fx:id="comboDiaNac" editable="true" layoutX="73.0" layoutY="289.0" onMouseEntered="#hoverDia" onMouseExited="#noHoverDia" prefHeight="31.0" prefWidth="97.0" promptText="Día" style="-fx-background-color: transparent;" styleClass="text" stylesheets="@estilosInput.css" />
+      <ComboBox fx:id="comboMesNac" editable="true" layoutX="209.0" layoutY="289.0" onMouseEntered="#hoverMes" onMouseExited="#noHoverMes" prefHeight="31.0" prefWidth="97.0" promptText="Mes" style="-fx-background-color: transparent;" stylesheets="@estilosInput.css" />
+      <ComboBox fx:id="comboAnioNac" editable="true" layoutX="336.0" layoutY="289.0" onMouseEntered="#hoverAnio" onMouseExited="#noHoverAnio" prefHeight="31.0" prefWidth="97.0" promptText="Año" style="-fx-background-color: transparent;" stylesheets="@estilosInput.css" />
+      <Label fx:id="labelFechaNac" layoutX="73.0" layoutY="257.0" onMousePressed="#pressLabelApellidos" prefHeight="31.0" prefWidth="355.0" text="  FECHA DE NACIMIENTO" textFill="WHITE" />
+      <Line fx:id="lineDia" endX="-5.0" endY="1.0" fill="#ffffff36" layoutX="174.0" layoutY="319.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line fx:id="lineMes" endX="-5.0" fill="#ffffff36" layoutX="310.0" layoutY="319.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line fx:id="lineAnio" endX="-5.0" fill="#ffffff36" layoutX="437.0" layoutY="319.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <TextField fx:id="textEdad" editable="false" layoutX="468.0" layoutY="279.0" onKeyTyped="#textTypedEdad" onMousePressed="#pressTextEdad" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineEdad" endX="256.0" fill="#ffffff36" layoutX="569.0" layoutY="319.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelEdad" layoutX="468.0" layoutY="271.0" onMousePressed="#pressLabelEdad" prefHeight="48.0" prefWidth="355.0" text="   EDAD" textFill="WHITE" />
+      <Circle fx:id="circleHombre" fill="#0084ff00" layoutX="97.0" layoutY="378.0" radius="11.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="circleMujer" fill="#0084ff00" layoutX="231.0" layoutY="378.0" radius="11.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Rectangle fx:id="rectangleHombre" arcHeight="5.0" arcWidth="5.0" fill="#76a5cc00" height="31.0" layoutX="80.0" layoutY="362.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.0" width="114.0" />
+      <Rectangle fx:id="rectangleMujer" arcHeight="5.0" arcWidth="5.0" fill="#76a5cc00" height="31.0" layoutX="215.0" layoutY="362.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.0" width="114.0" />
+      <Rectangle fx:id="rectangleSeleccionSexo" arcHeight="5.0" arcWidth="5.0" fill="#f700f700" height="31.0" layoutX="215.0" layoutY="362.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+      <Label fx:id="labelHombre" layoutX="73.0" layoutY="362.0" onMouseClicked="#clickRadioHombre" onMouseEntered="#hoverRadioHombre" onMouseExited="#noHoverRadioHombre" prefHeight="31.0" prefWidth="124.0" text="            HOMBRE" textFill="WHITE" />
+      <Label fx:id="labelMujer" layoutX="200.0" layoutY="362.0" onMouseClicked="#clickRadioMujer" onMouseEntered="#hoverRadioMujer" onMouseExited="#noHoverRadioMujer" prefHeight="31.0" prefWidth="124.0" text="            MUJER" textFill="WHITE" />
+      <TextField fx:id="textDireccion" layoutX="468.0" layoutY="350.0" onKeyPressed="#enterDireccion" onKeyTyped="#textTypedDireccion" onMousePressed="#pressTextDireccion" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineDireccion" endX="256.0" fill="#ffffff36" layoutX="569.0" layoutY="398.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelDireccion" layoutX="468.0" layoutY="350.0" onMousePressed="#pressLabelDireccion" prefHeight="48.0" prefWidth="355.0" text="   DIRECCIÓN" textFill="WHITE" />
+      <TextField fx:id="textTelefono" layoutX="73.0" layoutY="422.0" onKeyPressed="#enterTelefono" onKeyTyped="#textTypedTel" onMousePressed="#pressTextTel" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineTelefono" endX="256.0" fill="#ffffff36" layoutX="174.0" layoutY="470.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelTelefono" layoutX="73.0" layoutY="422.0" onMousePressed="#pressLabelTelefono" prefHeight="48.0" prefWidth="355.0" text="   TELÉFONO" textFill="WHITE" />
+      <TextField fx:id="textCorreo" layoutX="467.0" layoutY="422.0" onKeyPressed="#enterCorreo" onKeyTyped="#textTypedCorreo" onMousePressed="#pressTextCorreo" prefHeight="48.0" prefWidth="355.0" style="-fx-border-width: 3; -fx-background-color: transparent;" styleClass="text-input" stylesheets="@estilosInput.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Line fx:id="lineCorreo" endX="256.0" fill="#ffffff36" layoutX="568.0" layoutY="470.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Label fx:id="labelCorreo" layoutX="467.0" layoutY="422.0" onMousePressed="#pressLabelCorreo" prefHeight="48.0" prefWidth="355.0" text="   CORREO ELECTRÓNICO" textFill="WHITE" />
+      <Rectangle fx:id="rectangleGuardar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="696.0" layoutY="477.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="btnGuardar" alignment="CENTER" layoutX="692.0" layoutY="477.0" onMouseClicked="#clickGuardar" onMouseEntered="#hoverGuardar" onMouseExited="#noHoverGuardar" prefHeight="48.0" prefWidth="132.0" text="GUARDAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Rectangle fx:id="rectangleLimpiar" arcHeight="50.0" arcWidth="50.0" fill="#f800f800" height="48.0" layoutX="73.0" layoutY="477.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="124.0" />
+      <Label fx:id="btnLimpiar" alignment="CENTER" layoutX="69.0" layoutY="477.0" onMouseClicked="#clickLimpiar" onMouseEntered="#hoverLimpiar" onMouseExited="#noHoverLimpiar" prefHeight="48.0" prefWidth="132.0" text="LIMPIAR" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="labelTitulo" alignment="CENTER" layoutY="51.0" prefHeight="39.0" prefWidth="876.0" text="REGISTRO DE CLIENTES" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

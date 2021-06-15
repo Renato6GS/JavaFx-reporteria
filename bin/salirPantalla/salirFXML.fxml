@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salirPantalla.ControladorSalir">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="877.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fondoDifuminado.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b06452e" height="307.0" layoutX="240.0" layoutY="119.0" stroke="WHITE" strokeType="INSIDE" width="400.0" />
+      <Label alignment="CENTER" layoutX="242.0" layoutY="184.0" prefHeight="30.0" prefWidth="397.0" text="¿Seguro qué quiere salir?" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="31.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectangleSi" arcHeight="30.0" arcWidth="30.0" fill="#f800f800" height="35.0" layoutX="281.0" layoutY="300.0" stroke="#f800f8" strokeType="INSIDE" width="123.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Rectangle>
+      <Label fx:id="labelSi" alignment="CENTER" layoutX="282.0" layoutY="301.0" onMouseClicked="#clickSi" onMouseEntered="#hoverSi" onMouseExited="#noHoverSi" prefHeight="35.0" prefWidth="123.0" text="SÍ" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Rectangle fx:id="rectangleNo" arcHeight="30.0" arcWidth="30.0" fill="#f800f800" height="35.0" layoutX="475.0" layoutY="300.0" stroke="#f800f8" strokeType="INSIDE" width="123.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Rectangle>
+      <Label fx:id="labelNo" alignment="CENTER" layoutX="476.0" layoutY="301.0" onMouseClicked="#clickNo" onMouseEntered="#hoverNo" onMouseExited="#noHoverNo" prefHeight="35.0" prefWidth="123.0" text="NO" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="miAnchorPaneCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="876.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registrarActualizarCliente.ControladorCliente">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="978.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fondoSubMenu.jpg" />
+         </image>
+      </ImageView>
+      <Line fx:id="lineaSup1" endX="488.0" layoutX="244.0" layoutY="3.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line fx:id="lineaSup2" endX="488.0" layoutX="244.0" layoutY="3.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaSup3" endX="488.0" layoutX="244.0" layoutY="3.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaSup4" endX="488.0" layoutX="244.0" layoutY="3.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaSup5" endX="488.0" layoutX="244.0" layoutY="3.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="-69.33334350585938" endY="-31.561355590820312" layoutX="511.0" layoutY="55.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-69.33334350585938" endY="-31.561355590820312" layoutX="544.0" layoutY="56.0" rotate="90.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Label fx:id="labelRegistrar" alignment="BOTTOM_CENTER" layoutX="142.0" layoutY="-20.0" onMouseClicked="#clickRegistrar" onMouseEntered="#hoverRegistrar" onMouseExited="#noHoverRegistrar" prefHeight="119.0" prefWidth="594.0" text="REGISTRAR CLIENTE" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line fx:id="lineaInf5" endX="488.0" layoutX="244.0" layoutY="610.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaInf4" endX="488.0" layoutX="244.0" layoutY="610.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaInf3" endX="488.0" layoutX="244.0" layoutY="610.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaInf2" endX="488.0" layoutX="244.0" layoutY="610.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line fx:id="lineaInf1" endX="488.0" layoutX="244.0" layoutY="610.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-69.33334350585938" endY="-31.561355590820312" layoutX="511.0" layoutY="591.0" rotate="90.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-69.33334350585938" endY="-31.561355590820312" layoutX="544.0" layoutY="592.0" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+      <Label fx:id="labelActualizar" alignment="TOP_CENTER" layoutX="142.0" layoutY="516.0" onMouseClicked="#clickActualizar" onMouseEntered="#hoverActualizar" onMouseExited="#noHoverActualizar" prefHeight="127.0" prefWidth="594.0" text="ACTUALIZAR CLIENTE" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="btnRegresar" alignment="CENTER" layoutX="699.0" layoutY="245.0" onMouseClicked="#clickRegresar" onMouseEntered="#hoverRegresar" onMouseExited="#noHoverRegresar" prefHeight="94.0" prefWidth="293.0" rotate="270.0" text="MENÚ PRINCIPAL" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="32.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
